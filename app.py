@@ -110,5 +110,7 @@ def run_fastapi():
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 if __name__ == "__main__":
+    # Run FastAPI in a separate thread (optional for serving both APIs)
     threading.Thread(target=run_fastapi, daemon=True).start()
+    # Directly call Streamlit UI
     streamlit_ui()
