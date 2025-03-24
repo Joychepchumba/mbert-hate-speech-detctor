@@ -54,21 +54,11 @@ def predict(input: TextInput):
         "message": "This model supports multiple languages using mBERT."
     }
 
-# ✅ Streamlit UI (With Multilingual Emphasis)
+# ✅ Streamlit UI
 def streamlit_ui():
     st.set_page_config(page_title="🌍 Multilingual Hate Speech Detector", page_icon="🛑", layout="centered")
     st.title("🌍 Multilingual Hate Speech Detector")
-    st.write("This tool detects hate speech across **multiple languages** using **mBERT** (Multilingual BERT).")
-
-    st.markdown("""
-    ### 🔤 **Supported Languages**  
-    ✅ English 🇬🇧  
-    ✅ French 🇫🇷  
-    ✅ Spanish 🇪🇸  
-    ✅ German 🇩🇪  
-    ✅ Swahili 🇰🇪  
-    ✅ Many More...  
-    """)
+    st.write("This tool detects hate speech across multiple languages using mBERT (Multilingual BERT).")
 
     st.write("Enter a sentence below to check if it's **Hate Speech** or **Not Hate Speech**.")
 
