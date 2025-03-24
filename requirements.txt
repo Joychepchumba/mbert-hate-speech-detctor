@@ -1,6 +1,22 @@
-transformers
-torch
+# Core Libraries
 fastapi
 uvicorn
-gradio
+
+# Model & NLP Processing
+transformers
+torch
+sentencepiece  # Required for some tokenizer models
+protobuf  # Fixes potential protobuf version conflicts in transformers
+
+# Web Interfaces
 streamlit
+gradio
+
+# CORS & Request Handling
+pydantic
+python-multipart  # Required for FastAPI form data
+requests  # For API calls (useful for testing)
+
+# Optional Performance Boost
+httpx  # Asynchronous HTTP client (used by FastAPI)
+gunicorn  # Production server for FastAPI (if deployed)
