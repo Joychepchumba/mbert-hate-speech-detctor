@@ -56,7 +56,9 @@ def predict(input: TextInput):
 
 # ✅ Streamlit UI
 def streamlit_ui():
+    # Set page config as the first command in the function
     st.set_page_config(page_title="🌍 Multilingual Hate Speech Detector", page_icon="🛑", layout="centered")
+    
     st.title("🌍 Multilingual Hate Speech Detector")
     st.write("This tool detects hate speech across multiple languages using mBERT (Multilingual BERT).")
 
